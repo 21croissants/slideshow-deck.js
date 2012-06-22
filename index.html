@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>deck.js - S9 Template Pack by geraldb</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>deck.js - S9 Template Pack</h1>
+        <h2>Author Your Slides in Markdown or Textile</h2>
+        <a href="https://github.com/geraldb/slideshow-deck.js" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>deck.js - Slide Show (S9) Template Pack</h1>
+
+<h2>What's Slide Show (S9)?</h2>
+
+<p>A Ruby gem that lets you create slide shows and author slides in plain text
+using a wiki-style markup language that's easy-to-write and easy-to-read.
+More <a href="http://slideshow.rubyforge.org">Slide Show (S9) Project Site »</a></p>
+
+<h2>Intro</h2>
+
+<p>The <a href="https://github.com/imakewebthings/deck.js">deck.js</a> package
+by Caleb Troughton (aka imakewebthings) bundled up into 
+a Slide Show (S9) template pack lets you author your slides
+in a wiki-style markup language (that is, Markdown or Textile) plus
+lets you use text filters and helpers for adding comments, macros,
+includes, syntax highlighters and much more.</p>
+
+<p>Note, the deck.js template pack is configured to use
+the following headers in <code>slides.html.erb</code>:</p>
+
+<pre><code>author: Your Name Here
+title: Your Slide Show Title Here
+</code></pre>
+
+<h2>Try It Yourself - How To Use the deck.js Template Pack</h2>
+
+<p>If you want to try it yourself, install (fetch) the new template pack. Issue the command:</p>
+
+<pre><code>$ slideshow -f deck.js
+</code></pre>
+
+<p>Or as an alternative clone the template pack using <code>git</code>. Issue the commands:</p>
+
+<pre><code>$ cd ~/.slideshow/templates
+$ git clone git://github.com/geraldb/slideshow-deck.js.git
+</code></pre>
+
+<p>To check if the new template got installed, use the <code>-l/--list</code> switch/command:</p>
+
+<pre><code>$ slideshow -l
+</code></pre>
+
+<p>Listing something like:</p>
+
+<pre><code>Installed templates include:
+   deck.js (~/.slideshow/templates/deck.js/deck.js.txt)
+</code></pre>
+
+<p>Tip: To get started use the included quick starter sample. Issue the command:</p>
+
+<pre><code>$ slideshow -q deck.js
+</code></pre>
+
+<p>Now you will have a copy of the deck.js Quick Starter sample
+(that is, <a href="https://raw.github.com/geraldb/slideshow-deck.js/master/sample.markdown"><code>deck.js.text</code></a>)
+in Markdown in your working folder.</p>
+
+<pre><code>title: Getting Started with deck.js
+author: Caleb Troughton
+
+## How to Make a Deck
+
+1. ### Write Slides
+   Slide content is simple HTML.
+2. ### Choose Themes
+   One for slide styles and one for deck transitions.
+3. ### Include Extensions
+   Add extra functionality to your deck, or leave it stripped down.
+
+
+## The Markup
+
+Slides are just HTML elements with a class of `slide`.
+
+    &lt;section class='slide'&gt;
+      &lt;h2&gt;How to Make a Deck&lt;/h2&gt;
+      &lt;ol&gt;
+        &lt;li&gt;
+          &lt;h3&gt;Write Slides&lt;/h3&gt;
+          &lt;p&gt;Slide content is simple HTML.&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;h3&gt;Choose Themes&lt;/h3&gt;
+          &lt;p&gt;One for slide styles and one for deck transitions.&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;h3&gt;Include Extensions&lt;/h3&gt;
+          &lt;p&gt;Add extra functionality to your deck, or leave it stripped down.&lt;/p&gt;
+        &lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/section&gt;
+
+## Continued...
+
+...
+
+
+## Digging Deeper
+
+If you want to learn about making your own themes,
+extending deck.js, and more, check out the
+[documentation](http://imakewebthings.github.com/deck.js/docs).
+</code></pre>
+
+<p>Showtime! Let's use the <code>-t/--template</code> switch to generate the
+sample slide show. Example:</p>
+
+<pre><code>$ slideshow -t deck.js deck.js.text --h2
+</code></pre>
+
+<p>Note: Use the <code>--h2</code> option to break up slides on heading level 2
+(the default is <code>--h1</code>, that is, heading level 1).</p>
+
+<p>Open up the generated <code>deck.js.html</code> page in your browser. Voila. That's it.</p>
+
+<h2>Questions? Comments?</h2>
+
+<p>Questions? Comments?
+Send them along to the <a href="http://groups.google.com/group/webslideshow">Free Web Slide Show Alternatives (S5, S6, S9, Slidy And Friends) Forum/Mailing List</a>.
+Thanks!</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/geraldb/slideshow-deck.js/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/geraldb/slideshow-deck.js/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/geraldb/slideshow-deck.js"></a> is maintained by <a href="https://github.com/geraldb">geraldb</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
